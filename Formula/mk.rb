@@ -5,21 +5,21 @@
 class Mk < Formula
   desc "Multi-Kubectl: Run kubectl commands on multiple contexts"
   homepage "https://github.com/suminhong/multi-kubectl"
-  version "0.0.5"
+  version "0.0.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/suminhong/multi-kubectl/releases/download/v0.0.5/mk_0.0.5_darwin_amd64.tar.gz"
-      sha256 "c37953c17534b656cb5b3d2363372bd2dbf1444896e43873fe607465f4c1eb9d"
+      url "https://github.com/suminhong/multi-kubectl/releases/download/v0.0.6/mk_0.0.6_darwin_amd64.tar.gz"
+      sha256 "673a93acd5909252f1cc0fd158cf5cd9eb79a1b69650a86b403975e23e53af90"
 
       def install
         bin.install "mk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/suminhong/multi-kubectl/releases/download/v0.0.5/mk_0.0.5_darwin_arm64.tar.gz"
-      sha256 "69cfb3a46df6a91641981cd7231db953419de16117d5b2ec261c92be28f904ec"
+      url "https://github.com/suminhong/multi-kubectl/releases/download/v0.0.6/mk_0.0.6_darwin_arm64.tar.gz"
+      sha256 "a02fe083dcdb2ccc352281dc6de421e9b911ed9735d0b63d67cf55e31d319290"
 
       def install
         bin.install "mk"
@@ -29,15 +29,15 @@ class Mk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/suminhong/multi-kubectl/releases/download/v0.0.5/mk_0.0.5_linux_amd64.tar.gz"
-      sha256 "31a5c0aa0e9dbb55c6ae30956ac5650a55065c83469431a92c1b038d7568c6ae"
+      url "https://github.com/suminhong/multi-kubectl/releases/download/v0.0.6/mk_0.0.6_linux_amd64.tar.gz"
+      sha256 "6ecff7cf5d473b46ae7ddd49e5a83402b352092e0086b0a0cb789d4701b147ba"
       def install
         bin.install "mk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/suminhong/multi-kubectl/releases/download/v0.0.5/mk_0.0.5_linux_arm64.tar.gz"
-      sha256 "78c8cf5c6cb5d5ace578809f8679d2cdf59611dc984ad35b17be3f3b656fecb5"
+      url "https://github.com/suminhong/multi-kubectl/releases/download/v0.0.6/mk_0.0.6_linux_arm64.tar.gz"
+      sha256 "05a47c687040b324eaa1952d4cc8d8bb3a7f839e0614ebc415b18280e9c3cd85"
       def install
         bin.install "mk"
       end

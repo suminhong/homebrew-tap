@@ -5,21 +5,21 @@
 class Mk < Formula
   desc "Multi-Kubectl: Run kubectl commands on multiple contexts"
   homepage "https://github.com/suminhong/multi-kubectl"
-  version "0.0.7"
+  version "0.0.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/suminhong/multi-kubectl/releases/download/v0.0.7/mk_0.0.7_darwin_amd64.tar.gz"
-      sha256 "b420e79ea4b21bdded2d35e4a7250d2fdddf49718b20cde88eda1d3ed53d0c2c"
+      url "https://github.com/suminhong/multi-kubectl/releases/download/v0.0.8/mk_0.0.8_darwin_amd64.tar.gz"
+      sha256 "dc9e59dec927dc332780295f7fc7017950515ac7e6c47dd19979463ebebc1830"
 
       def install
         bin.install "mk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/suminhong/multi-kubectl/releases/download/v0.0.7/mk_0.0.7_darwin_arm64.tar.gz"
-      sha256 "4652261b91db235cf890c4d4ebb58be3215eae48390f31daec9ccdada4ef3728"
+      url "https://github.com/suminhong/multi-kubectl/releases/download/v0.0.8/mk_0.0.8_darwin_arm64.tar.gz"
+      sha256 "eeff63858b268124c79dddb2749d272a766cc0a0a854dea8ccf5abdd2ff8b6be"
 
       def install
         bin.install "mk"
@@ -29,15 +29,15 @@ class Mk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/suminhong/multi-kubectl/releases/download/v0.0.7/mk_0.0.7_linux_amd64.tar.gz"
-      sha256 "5c7668be867eac965e36335e0e5e06493c69d5b1cdc13fc1493f497d15b84dd0"
+      url "https://github.com/suminhong/multi-kubectl/releases/download/v0.0.8/mk_0.0.8_linux_amd64.tar.gz"
+      sha256 "61d45c6979996696be35a10153763f9c0862d041b414283febee90b8cefa902d"
       def install
         bin.install "mk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/suminhong/multi-kubectl/releases/download/v0.0.7/mk_0.0.7_linux_arm64.tar.gz"
-      sha256 "2c05aa4a64877a031140c1998d53344c2356560a26b57cd63a103ad482965023"
+      url "https://github.com/suminhong/multi-kubectl/releases/download/v0.0.8/mk_0.0.8_linux_arm64.tar.gz"
+      sha256 "0b275962536d41c19ff98abfdde9c5461b5b6cda946000a15c7741ce10b77c4e"
       def install
         bin.install "mk"
       end
